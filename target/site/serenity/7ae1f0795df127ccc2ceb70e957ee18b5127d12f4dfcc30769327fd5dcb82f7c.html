@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>verify if user is updated in gorest application</title>
+    <title>Create a new post for the user</title>
     <link rel="shortcut icon" href="favicon.ico">
 
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-            > verify if user is updated in gorest application
+            > Create a new post for the user
         </span>
         </div>
         <div class="rightbg"></div>
@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-01-2023 21:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-01-2023 21:14</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -73,7 +73,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Testing Different Request On The Gorest Application</span>
+                                    <span class="story-header-title">Posts CRUD Test</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
@@ -94,7 +94,7 @@
                             <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
                                     <span class="success-color">
-                                    Verify If User Is Updated In Gorest Application
+                                    Create A New Post For The User
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -140,13 +140,13 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">When I update new user by providing the information</span>
+                            <span class="top-level-step">Creating user with name: Prime96488, gender: male, status: Prime96488@email.com, email: active</span>
                             </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.92s</span></td>
+                    <td width="100"><span class="top-level-step">4.88s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -156,36 +156,21 @@
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-step">Update user details with name: _updated, gender: male, userid: 42509, email: Prime11906@email.com, status: active</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">0.92s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
                                   class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">PATCH https://gorest.co.in/public/v2/users/42509</span>
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users</span>
 
                                 <span class="rest-query">
                 <span>
                     <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
-                            data-target="#restModal-3">
+                            data-target="#restModal-2">
                         REST Query
                     </button>
                 </span>
                 <!-- Modal -->
-                <div class="modal fade" id="restModal-3" tabindex="-1" role="dialog"
+                <div class="modal fade" id="restModal-2" tabindex="-1" role="dialog"
                      aria-labelledby="restModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
@@ -194,23 +179,23 @@
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="restModalLabel">
-                                PATCH https://gorest.co.in/public/v2/users/42509
+                                POST https://gorest.co.in/public/v2/users
                                 </h4>
                             </div>
                             <div class="modal-body">
-                                    <p>Status code: 200</p>
+                                    <p>Status code: 201</p>
                                     <p>Content Type: application/json</p>
                                     <h5>Request Headers</h5>
                                     <pre>Authorization=Bearer a58049a1423e7d9a9d0f744f34e6a883d3f4228d9f8e198bd163aa265bbf5906<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
                                     <h5>Content Body</h5>
-                                    <pre>{<br>    &quot;name&quot;: &quot;_updated&quot;,<br>    &quot;email&quot;: &quot;Prime11906@email.com&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;name&quot;: &quot;Prime96488&quot;,<br>    &quot;email&quot;: &quot;Prime96488@email.com&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}</pre>
                                     <h5>Request Cookies</h5>
                                     <pre></pre>
                                     <h5>Response Headers</h5>
-                                    <pre>Date: Tue, 10 Jan 2023 21:46:38 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;30a74706f5c2218e3690c338aa7b006e&quot;<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 88<br>x-ratelimit-reset: 2<br>x-request-id: 73edad70-4e7a-4c99-b8f2-1922d87f9597<br>x-runtime: 0.056145<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Ti8U1qnuQpUHwNwGGGOcAYxS7n06NkqKv0zRhKGu12eiPQ4IOIPqx20mtfqA%2Bh4jzi6xQ06ivTzdTXHOItzFFdlVdS3bVMHUVIdOGlaNBsDQQvdV5azUIWZlHOV5kU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 78789b439bf976d1-LHR<br>Content-Encoding: gzip<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                    <pre>Date: Tue, 10 Jan 2023 21:14:48 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;021012a62b41efc69a0f17ecf193d46c&quot;<br>location: https://gorest.co.in/public/v2/users/42381<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 89<br>x-ratelimit-reset: 1<br>x-request-id: f80d7bf6-d442-4a7c-97f1-183da00a625f<br>x-runtime: 0.059126<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=GMEmdHaSFLHiXZijjezyrJEc%2BfhblSfYv%2FNJW0YS6AA3zQaXH70vp6MB2f3jmS0kZOXi8zMLby0PWaEIqjxZ%2BmVa9TUW8diQCJveEuelKMVSo9Ix%2Fojae4iQzWsGQic%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 78786ca408034072-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
                                 <h5>Response Body</h5>
                                     <pre>
-                                        {<br>    &quot;email&quot;: &quot;Prime11906@email.com&quot;,<br>    &quot;name&quot;: &quot;_updated&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;,<br>    &quot;id&quot;: 42509<br>}
+                                        {<br>    &quot;id&quot;: 42381,<br>    &quot;name&quot;: &quot;Prime96488&quot;,<br>    &quot;email&quot;: &quot;Prime96488@email.com&quot;,<br>    &quot;gender&quot;: &quot;male&quot;,<br>    &quot;status&quot;: &quot;active&quot;<br>}
                                     </pre>
                                     <h5>Response Cookies</h5>
                                     <pre></pre>
@@ -231,29 +216,105 @@
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
-
                     </table>
                     </td>
                     <tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Then I must get back a valid status code 200</span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">Create post for userId: 42381, title: Acidus versus terebro claustrum modi tyrannus asdfg and body: Curso combibo super. Voluptas demum speciosus. Enim cado alias. Candidus antea animus. Alter facilis sub. Autem creber amitto. Ambitus comptus sunt. Modi delinquo antiquus. Auxilium angustus volubilis. Aufero urbs balbus. Deorsum ultra vigor. Crux sponte synagoga. Consequatur triumphus tamisium. Vulgo avaritia cohaero. Capillus minus cattus. Aggredior ut iusto. Officiis torrens autem.</span>
+                            </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.09s</span></td>
+                    <td width="100"><span class="top-level-step">0.84s</span></td>
                 </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">POST https://gorest.co.in/public/v2/users/42381/posts</span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-4">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-4" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                POST https://gorest.co.in/public/v2/users/42381/posts
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 201</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Authorization=Bearer a58049a1423e7d9a9d0f744f34e6a883d3f4228d9f8e198bd163aa265bbf5906<br>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre>{<br>    &quot;id&quot;: 0,<br>    &quot;user_id&quot;: 42381,<br>    &quot;title&quot;: &quot;Acidus versus terebro claustrum modi tyrannus asdfg&quot;,<br>    &quot;body&quot;: &quot;Curso combibo super. Voluptas demum speciosus. Enim cado alias. Candidus antea animus. Alter facilis sub. Autem creber amitto. Ambitus comptus sunt. Modi delinquo antiquus. Auxilium angustus volubilis. Aufero urbs balbus. Deorsum ultra vigor. Crux sponte synagoga. Consequatur triumphus tamisium. Vulgo avaritia cohaero. Capillus minus cattus. Aggredior ut iusto. Officiis torrens autem.&quot;<br>}</pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Date: Tue, 10 Jan 2023 21:14:50 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Cache-Control: max-age=0, private, must-revalidate<br>etag: W/&quot;6886f7f7ecd9d34849c9b9ae91688e74&quot;<br>location: https://gorest.co.in/public/v2/posts/12727<br>referrer-policy: strict-origin-when-cross-origin<br>vary: Origin<br>x-content-type-options: nosniff<br>x-download-options: noopen<br>x-frame-options: SAMEORIGIN<br>x-permitted-cross-domain-policies: none<br>x-ratelimit-limit: 90<br>x-ratelimit-remaining: 89<br>x-ratelimit-reset: 1<br>x-request-id: 9bacfb75-d699-42bb-a500-7ae11e7a3e43<br>x-runtime: 0.066142<br>x-xss-protection: 0<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=TQVTTJIoOlkSsJOggq2OdoiHH7xAPsi1a4HzvTGYFqhQ5e4XOxM68gmp%2F4%2BR4qPib0zentbwbDlNkj3IoLomkP%2B83SGj58K%2BPMln%2FaEO1xEpRyAvF7dp%2FcVOzb8vdrE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 78786cac8d0e73e3-LHR<br>alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400</pre>
+                                <h5>Response Body</h5>
+                                    <pre>
+                                        {<br>    &quot;id&quot;: 12727,<br>    &quot;user_id&quot;: 42381,<br>    &quot;title&quot;: &quot;Acidus versus terebro claustrum modi tyrannus asdfg&quot;,<br>    &quot;body&quot;: &quot;Curso combibo super. Voluptas demum speciosus. Enim cado alias. Candidus antea animus. Alter facilis sub. Autem creber amitto. Ambitus comptus sunt. Modi delinquo antiquus. Auxilium angustus volubilis. Aufero urbs balbus. Deorsum ultra vigor. Crux sponte synagoga. Consequatur triumphus tamisium. Vulgo avaritia cohaero. Capillus minus cattus. Aggredior ut iusto. Officiis torrens autem.&quot;<br>}
+                                    </pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
                 <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>1.01s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>6.45s</em></span></td>
                 </tr>
 
             </table>
